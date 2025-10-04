@@ -1,5 +1,14 @@
 <html>
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZ52VHPZRP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-SZ52VHPZRP');
+    </script>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' 'unsafe-inline'; worker-src 'self' blob:;">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://launchar.app/sdk/v1?key=YOUR_SDK_KEY&redirect=true"></script>
@@ -14,23 +23,23 @@
         xr-mode-ui="enabled: false"
         device-orientation-permission-ui="enabled: false">
     <a-assets>
-        <img id="kitten" src="./assets/kitten.jpeg">
-        <img id="puppy" src="./assets/puppy.jpg">
-        <img id="dog" src="./assets/dog.jpg">
-        <img id="cat" src="./assets/cat.jpeg">
+        <img id="tang_yuan" src="./assets/tang_yuan.png">
+        <img id="zongzi" src="./assets/zongzi.png">
+        <img id="nian_gao" src="./assets/nian_gao.png">
+        <img id="mooncakes" src="./assets/mooncakes.png">
     </a-assets>
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
     <a-entity mindar-image-target="targetIndex: 0">
-        <a-plane src="#cat" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
+        <a-plane src="#mooncakes" material="transparent: true;" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
     </a-entity>
     <a-entity mindar-image-target="targetIndex: 1">
-        <a-plane src="#dog" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
+        <a-plane src="#nian_gao" material="transparent: true;" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
     </a-entity>
     <a-entity mindar-image-target="targetIndex: 2">
-        <a-plane src="#kitten" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
+        <a-plane src="#tang_yuan" material="transparent: true;" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
     </a-entity>
     <a-entity mindar-image-target="targetIndex: 3">
-        <a-plane src="#puppy" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
+        <a-plane src="#zongzi" material="transparent: true;" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
     </a-entity>
 </a-scene>
 </body>
